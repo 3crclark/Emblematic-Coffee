@@ -40,7 +40,7 @@ export default function AboutPage() {
               </p>
               
               <p className="text-lg md:text-xl text-earth-700 leading-relaxed font-medium">
-                Our coffee is emblematic of what's possible when business serves both excellence and equity.
+                Our coffee is emblematic of what is possible when business serves both excellence and equity.
               </p>
             </div>
           </div>
