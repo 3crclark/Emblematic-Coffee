@@ -4,9 +4,33 @@ import { useCart } from '@/contexts/CartContext'
 import { Footer } from '@/components/Footer'
 import { Minus, Plus, Trash2 } from 'lucide-react'
 import Link from 'next/link'
+import { useState } from 'react'
 
 export default function CartPage() {
   const { items, updateQuantity, removeFromCart, totalPrice, clearCart } = useCart()
+  const [loading, setLoading] = useState(false)
+
+  const handleCheckout = async () => {
+    setLoading(true)
+    try {
+      const response = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items }),
+      })
+
+      const { url } = await response.json()
+      
+      if (url) {
+        window.location.href = url // Redirect to Stripe Checkout
+      }
+    } catch (error) {
+      console.error('Checkout error:', error)
+      alert('Something went wrong. Please try again.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   if (items.length === 0) {
     return (
@@ -102,8 +126,12 @@ export default function CartPage() {
                 ${totalPrice.toFixed(2)}
               </span>
             </div>
-            <button className="w-full px-6 py-4 bg-coffee-900 text-white rounded-lg hover:bg-coffee-800 transition-colors font-medium text-lg">
-              Proceed to Checkout
+            <button 
+              onClick={handleCheckout}
+              disabled={loading}
+              className="w-full px-6 py-4 bg-coffee-900 text-white rounded-lg hover:bg-coffee-800 transition-colors font-medium text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {loading ? 'Processing...' : 'Proceed to Checkout'}
             </button>
             <Link
               href="/coffee"
@@ -118,4 +146,3 @@ export default function CartPage() {
     </main>
   )
 }
-

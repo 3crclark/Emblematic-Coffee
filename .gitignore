@@ -37,3 +37,4 @@ next-env.d.ts
 /data/signups.json
 /data/signups.db
 
+.env.local
