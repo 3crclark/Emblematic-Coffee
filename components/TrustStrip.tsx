@@ -1,4 +1,4 @@
-import { MapPin, Clock, Briefcase } from 'lucide-react'
+import { MapPin, Coffee, Heart } from 'lucide-react'
 
 export function TrustStrip() {
   return (
@@ -8,7 +8,7 @@ export function TrustStrip() {
           <div className="flex flex-col items-center gap-2">
             <MapPin className="w-5 h-5 text-coffee-900" strokeWidth={1.5} />
             <p className="text-sm font-medium text-coffee-900">
-              Roasted in Guatemala
+              Farmed, Roasted, Packaged in Guatemala
             </p>
             <p className="text-xs text-earth-600">
               Not just sourced
@@ -16,22 +16,22 @@ export function TrustStrip() {
           </div>
 
           <div className="flex flex-col items-center gap-2">
-            <Clock className="w-5 h-5 text-coffee-900" strokeWidth={1.5} />
+            <Coffee className="w-5 h-5 text-coffee-900" strokeWidth={1.5} />
             <p className="text-sm font-medium text-coffee-900">
-              10-14 Days Fresh
+              High Quality Coffee Culture at Your Doorstep
             </p>
             <p className="text-xs text-earth-600">
-              Air-freighted to you
+              Air-freighted fresh
             </p>
           </div>
 
           <div className="flex flex-col items-center gap-2">
-            <Briefcase className="w-5 h-5 text-coffee-900" strokeWidth={1.5} />
+            <Heart className="w-5 h-5 text-coffee-900" strokeWidth={1.5} />
             <p className="text-sm font-medium text-coffee-900">
-              Full Value Chain
+              Investing in Guatemala at Every Step
             </p>
             <p className="text-xs text-earth-600">
-              Supporting Guatemalan workers
+              Guatemalteco
             </p>
           </div>
         </div>
