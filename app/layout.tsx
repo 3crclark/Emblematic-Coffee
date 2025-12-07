@@ -49,7 +49,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${crimson.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://[your-domain].com" />
+        <link rel="canonical" href="https://emblematiccoffee.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -58,11 +58,11 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'Emblematic Coffee',
               description: 'Premium 100% Guatemalan coffee and microlot, single origin, locally roasted specialty coffee',
-              url: 'https://[your-domain].com',
-              logo: 'https://[your-domain].com/logo.png',
+              url: 'https://emblematiccoffee.com',
+              logo: 'https://emblematiccoffee.com/logo.png',
               sameAs: [
-                'https://instagram.com/[your-handle]',
-                'https://linkedin.com/company/[your-handle]',
+                'https://instagram.com/emblematiccoffee',
+                'https://linkedin.com/company/emblematiccoffee',
               ],
             }),
           }}
