@@ -10,10 +10,12 @@ export default function OriginPage() {
           You received this gift because you're a valued part of my community. Here's where it all began.
         </p>
         
-        {/* PHOTO PLACEHOLDER 1 */}
-        <div className="w-full h-96 bg-coffee-100 rounded-lg flex items-center justify-center mb-16 border border-coffee-200">
-          <span className="text-coffee-500 text-lg">Image from Guatemala - water project or landscape</span>
-        </div>
+        {/* Image 1 */}
+        <img 
+          src="/origin1.jpg" 
+          alt="Water project in Guatemala" 
+          className="w-full h-96 object-cover rounded-lg mb-16"
+        />
       </section>
 
       {/* The Story Section */}
@@ -45,10 +47,12 @@ export default function OriginPage() {
             </p>
           </div>
 
-          {/* PHOTO PLACEHOLDER 2 */}
-          <div className="w-full h-96 bg-coffee-100 rounded-lg flex items-center justify-center mt-12 border border-coffee-200">
-            <span className="text-coffee-500 text-lg">Coffee roasting operation or farmer</span>
-          </div>
+          {/* Image 2 */}
+          <img 
+            src="/origin2.jpg" 
+            alt="Coffee roasting operation" 
+            className="w-full h-96 object-cover rounded-lg mt-12"
+          />
         </div>
       </section>
 
@@ -85,10 +89,12 @@ export default function OriginPage() {
             </p>
           </div>
 
-          {/* PHOTO PLACEHOLDER 3 */}
-          <div className="w-full h-96 bg-coffee-100 rounded-lg flex items-center justify-center mt-12 border border-coffee-200">
-            <span className="text-coffee-500 text-lg">Packaged bags or green beans</span>
-          </div>
+          {/* Image 3 */}
+          <img 
+            src="/origin3.jpg" 
+            alt="Packaged coffee bags" 
+            className="w-full h-96 object-cover rounded-lg mt-12"
+          />
         </div>
       </section>
 
@@ -143,22 +149,24 @@ export default function OriginPage() {
             </p>
           </div>
 
-          {/* PHOTO PLACEHOLDER 4 */}
-          <div className="w-full h-96 bg-coffee-100 rounded-lg flex items-center justify-center border border-coffee-200">
-            <span className="text-coffee-500 text-lg">Guatemala landscape or community scene</span>
-          </div>
+          {/* Image 4 */}
+          <img 
+            src="/origin4.jpg" 
+            alt="Guatemala landscape" 
+            className="w-full h-96 object-cover rounded-lg"
+          />
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="max-w-4xl mx-auto px-6 py-16 text-center">
-        <div className="bg-earth-900 rounded-lg shadow-lg p-12">
-          <p className="text-sm uppercase tracking-wide text-[#f97316] font-semibold mb-6">Take the Next Step</p>
+        <div className="bg-coffee-800 rounded-lg shadow-lg p-12">
+          <p className="text-sm uppercase tracking-wide text-coffee-200 font-semibold mb-6">Take the Next Step</p>
           
           <div className="mb-8">
             <a 
               href="/coffee" 
-              className="inline-block bg-[#f97316] text-earth-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#ea580c] transition-colors shadow-md"
+              className="inline-block bg-coffee-100 text-coffee-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-coffee-200 transition-colors shadow-md"
             >
               Subscribe to 6-Month Sampler
             </a>
@@ -170,7 +178,7 @@ export default function OriginPage() {
           
           <a 
             href="/coffee" 
-            className="inline-block bg-coffee-100 text-earth-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-coffee-200 transition-colors shadow-md"
+            className="inline-block bg-transparent text-coffee-100 px-8 py-4 rounded-lg font-bold text-lg hover:bg-coffee-700 transition-colors border-2 border-coffee-100"
           >
             Shop Single Bags
           </a>
